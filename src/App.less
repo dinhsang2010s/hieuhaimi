@@ -1,0 +1,30 @@
+.layout-main {
+  .logo {
+    height: 64px;
+  }
+  .menu {
+    height: calc(100% - 64px);
+    .ant-menu-item {
+      border-radius: 0 !important;
+      color: var(--text-color) !important;
+      background: none !important;
+      &:hover {
+        background-color: var(--primary-color) !important;
+      }
+    }
+  }
+
+  .component {
+    .header-component {
+      border: 1px solid #fff;
+      padding-inline: unset !important;
+    }
+    .content-component {
+      margin: 50px 15px 15px;
+      box-shadow: 1px 1px 10px 5px var(--shadow-color);
+    }
+    .footer-component {
+      padding: 10px 30px !important;
+    }
+  }
+}
