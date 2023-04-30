@@ -1,0 +1,21 @@
+.logo {
+  height: 64px;
+}
+.menu {
+  height: calc(100% - 64px);
+  .ant-menu-item {
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    &:hover {
+      a,
+      .ant-menu-item-icon {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .ant-menu-item-selected {
+    background-color: var(--primary-color-lighten);
+  }
+}

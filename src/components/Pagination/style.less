@@ -1,0 +1,43 @@
+.pagination {
+  .ant-pagination-item {
+    background-color: var(--body-background);
+    border: 1px solid var(--text-color);
+    border-radius: unset;
+    a {
+      color: var(--text-color) !important;
+    }
+  }
+  .ant-pagination-item-active {
+    background-color: var(--primary-color) !important;
+  }
+
+  .ant-pagination-options {
+    .ant-select-selector,
+    .ant-pagination-options-quick-jumper > input {
+      background-color: var(--body-background);
+      border: 1px solid var(--text-color);
+      border-radius: unset;
+      color: var(--text-color) !important;
+    }
+
+    .ant-select-dropdown {
+      background-color: var(--body-background);
+      .ant-select-item-option-content {
+        color: var(--text-color) !important;
+      }
+      .ant-select-item-option-selected {
+        background-color: var(--primary-color) !important;
+      }
+    }
+  }
+  .ant-pagination-item-link,
+  .ant-select-arrow {
+    color: var(--text-color) !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ant-pagination-options {
+    opacity: 0 !important;
+  }
+}
