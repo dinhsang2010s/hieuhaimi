@@ -5,10 +5,12 @@ import { HeaderComponent } from "./Header";
 import { FilterComponent } from "./Filter";
 import { ContentComponent } from "./Content";
 import { FooterComponent } from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 export const LayoutComponent = () => {
   const [collapsed, setCollapsed] = useState(false);
   const onChangeCollapsed = () => setCollapsed(!collapsed);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window
@@ -23,7 +25,7 @@ export const LayoutComponent = () => {
           collapsed={collapsed}
           onChangeCollapsed={onChangeCollapsed}
         />
-        <FilterComponent />
+        {/* <FilterComponent /> */}
         <ContentComponent />
         <FooterComponent />
       </Layout>

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Login from "./pages/login";
+import { Category } from "./pages/Category";
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/category",
-        element: <div>dsadasdasdasdas</div>,
+        element: <Category />,
       },
     ],
   },

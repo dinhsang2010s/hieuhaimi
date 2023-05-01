@@ -1,0 +1,31 @@
+.ant-table-tbody {
+  background-color: var(--component-background);
+  color: var(--text-color);
+  .ant-table-row {
+    .ant-table-cell {
+      border-radius: unset !important;
+      color: var(--text-color) !important;
+      border-bottom: unset !important;
+      &::before {
+        width: 0 !important;
+      }
+    }
+    &:hover {
+      .ant-table-cell {
+        background-color: var(--body-background) !important;
+      }
+    }
+  }
+}
+
+.ant-table-thead {
+  .ant-table-cell {
+    background-color: var(--component-background) !important;
+    border-radius: unset !important;
+    color: var(--text-color) !important;
+    border-bottom: unset !important;
+    //   &::before {
+    //     width: 0 !important;
+    //   }
+  }
+}

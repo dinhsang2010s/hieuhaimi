@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LayoutComponent } from "./layout";
-import "./App.less";
 import { ConfigProvider } from "antd";
+import "./App.less";
 
 const App: React.FC = () => {
   return (
